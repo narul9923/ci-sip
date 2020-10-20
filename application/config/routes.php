@@ -57,5 +57,14 @@ $route['categories/(:num)/show'] = 'CategoriesController/show/$1';
 $route['categories/(:num)/edit'] = 'CategoriesController/edit/$1';
 $route['categories/(:num)/delete'] = 'CategoriesController/delete/$1';
 
+// Products Controller
+$route['products/index'] = 'ProductsController/index';
+$route['products/index/(:num)'] = 'ProductsController/index';
+$route['products/create'] = 'ProductsController/create';
+$route['products/test'] = 'ProductsController/test';
+$route['products/(:num)/show'] = 'ProductsController/show/$1';
+$route['products/(:num)/edit'] = 'ProductsController/edit/$1';
+$route['products/(:num)/delete'] = 'ProductsController/delete/$1';
+
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
