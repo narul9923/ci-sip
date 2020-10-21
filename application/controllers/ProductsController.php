@@ -52,10 +52,12 @@ class ProductsController extends CI_Controller {
             $page = 0;
         }
 
+        $data['no'] = $page + 1;
+
         $data['products'] = $this->Product->paginate($category_id, $search, $per_page, $page);
         $categories = $this->Category->getAll();
         $categories = array_column($categories, 'name', 'id');
-        $data['categories'] = array_merge([''=>'All Categories'], $categories);
+        $data['categories'] = [''=>'All Categories'] + $categories;
         $this->load->view('admin/product/index', $data);
     }
 

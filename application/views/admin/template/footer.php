@@ -48,5 +48,16 @@
 <script src="<?= base_url('assets/dist/js/pages/dashboard.js') ?>"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="<?= base_url('assets/dist/js/demo.js') ?>"></script>
+<script type="text/javascript">
+        $(function(){
+            var url = window.location;
+                $('ul.nav-sidebar a').filter(function() {
+                return this.href == url;
+            }).addClass('active');
+                $('ul.nav-treeview a').filter(function() {
+                return this.href == url;
+            }).parentsUntil(".nav-sidebar > .nav-treeview").addClass('menu-open') .prev('a').addClass('active');
+        });
+</script>
 </body>
 </html>

@@ -44,9 +44,18 @@
 
           <li class="nav-item">
             <a href="<?= base_url('products/index'); ?>" class="nav-link">
-              <i class="nav-icon fas fa-tags"></i>
+              <i class="nav-icon fas fa-list"></i>
               <p>
                 Products
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="<?= base_url('transactions/index'); ?>" class="nav-link">
+              <i class="nav-icon fas fa-dollar-sign"></i>
+              <p>
+                Transactions
               </p>
             </a>
           </li>

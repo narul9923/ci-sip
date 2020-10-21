@@ -69,9 +69,10 @@
 											</tr>
 										</thead>
 										<tbody>
-											<?php foreach ($products as $key => $product) {?>
+											<?php 
+											foreach ($products as $key => $product) {?>
 											<tr>
-                                                <td><?php echo $key + 1 ?></td>
+                                                <td><?php echo  $no++ ?></td>
 												<td><?php echo $product['category_name']; ?></td>
 												<td><?php echo $product['name']; ?></td>
 												<td><?php echo $product['price']; ?></td>

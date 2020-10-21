@@ -66,5 +66,11 @@ $route['products/(:num)/show'] = 'ProductsController/show/$1';
 $route['products/(:num)/edit'] = 'ProductsController/edit/$1';
 $route['products/(:num)/delete'] = 'ProductsController/delete/$1';
 
+//Transaction Controller
+$route['transactions/create'] = 'TransactionController/create';
+$route['transactions/import'] = 'TransactionController/import';
+$route['transactions/index'] = 'TransactionController/index';
+$route['transactions/index/(:num)'] = 'TransactionController/index';
+
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
